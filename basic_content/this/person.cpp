@@ -9,20 +9,24 @@ public:
         BOY = 0, 
         GIRL 
     }SexType;
+
     Person(char *n, int a,SexType s){
         name=new char[strlen(n)+1];
         strcpy(name,n);
         age=a;
         sex=s;
     }
+
     int get_age() const{
     
         return this->age; 
     }
+
     Person& add_age(int a){
         age+=a;
         return *this; 
     }
+
     ~Person(){
         delete [] name;
     }
@@ -36,6 +40,6 @@ private:
 int main(){
     Person p("zhangsan",20,Person::BOY); 
     cout<<p.get_age()<<endl;
-
+    cout<<p.add_age(10).get_age()<<endl;
     return 0;
 }
