@@ -16,3 +16,7 @@ int main()
 
     return 0; 
 } 
+
+
+
+// assert是宏，不是函数
