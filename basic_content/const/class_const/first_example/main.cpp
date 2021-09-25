@@ -4,7 +4,7 @@ using namespace std;
 
 Apple::Apple(int i):apple_number(i)
 {
-
+    // 这里为什么可以作为一个函数来重载？
 }
 int Apple::add(int num){
     take(num);
